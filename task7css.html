@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom-in{
+            padding-left: 25px;
+            padding-right: 55px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            margin-top: 100px;
+            margin-left: 450px;
+            margin-right: 590px;
+            border: 2px solid black ;
+            background-color: rgb(229, 206, 229);
+           }
+            .custom-label{
+                margin: 20px; /* Adjust the margin as needed to create space */
+                text-align: left;
+                width: 100%;
+                
+            }
+        
+            .custom-input {
+                padding: 2px; /* Add padding to the input for spacing */
+                text-align:left;
+                float: right;
+               
+            }
+            button{
+               text-align: center;
+               padding-left: 160px;
+               padding-right: 160px;
+               padding-top: 2px;
+               padding-bottom: 2px;
+               margin-top: 40px;
+               margin-left: 20px;
+               border-radius: 5px;
+               
+            }
+            body{
+                background-color: rgb(203, 101, 203);
+            }
+    </style>
+</head>
+<body>
+    <div class="custom-in">
+        <label for="fullname" class="custom-label">Name:</label>
+        <input type="text" class="custom-input" id="fullname" placeholder="Your name">
+        <br><br>
+        <label for="username" class="custom-label">Email:</label>
+        <input type="text" class="custom-input" id="username" placeholder="Your email">
+        <br><br>
+        <label for="password" class="custom-label">Password:</label>
+        <input type="text" class="custom-input" id="password" >
+        <br><br>
+        <label for="repassword" class="custom-label">Phone Number:</label>
+        <input type="text" class="custom-input" id="repassword" >
+        <br><br>
+        
+         <label for="gen" class="custom-label">Gender:</label> 
+         <div class="custom-input">
+         <td>
+            <label for="gen">Male</label>
+            <input type="radio"  id="gen"> 
+            
+            <label for="gen">Female</label>
+            <input type="radio"  id="gen">
+
+            <label for="gen">Others</label>
+            <input type="radio" id="gen">
+         </td>
+         </div>
+          <br><br>
+          <label id="lan" class="custom-label">Language:
+          <div class="custom-input">
+            <td>
+            <select name="lan" id="lan" class="custom-input">
+            <option value="defalut" class="custom-input">select language</option>
+            <option value="India" class="custom-input">Hindi</option>
+            <option value="Usa" class="custom-input">English</option>
+            </select>
+            </td>
+        </div>
+         <br><br>   
+        <label for="address" class="custom-label">Zipcode</label>
+        <input type="text" class="custom-input" id="address" >
+        <br><br>
+        <label for="about" class="custom-label">About</label>
+        <td><textarea class="custom-input" name="address" rows="3" required placeholder="Write about yourself"></textarea></td>
+        <br><br>
+        
+        <button><h4>Register</h4></button>
+
+    </div>
+</body>
+</html>

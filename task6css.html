@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <style>
+        body {
+            background-color:cyan;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 400px;
+            margin-left: 500px;
+            margin-top: 30px;
+            margin-right: auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(59, 55, 55, 0.1);
+        }
+        h2 {
+            color: 00ff15; 
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 94%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #000000;
+            border-radius: 3px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .remember-me {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: flex;
+        }
+        .login-button {
+            background-color: #4fd45a; 
+            color: white;
+            padding: 10px ;
+            width:400px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: darkgreen;  
+              }
+        .cancel-button {
+            background-color: #ff0000; 
+            color: white;
+            padding: 10px ;
+            width: auto;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .cancel-button:hover {
+            background-color: #cc0000; 
+            display: flexbox;
+            justify-content: flex;
+        }
+        p{
+            font-size: small;
+            text-align: end;
+            float: right;
+        
+        }
+        #img{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #boxcancel{
+            
+            padding-left:3px;
+            padding-top:7px;
+            padding-bottom: 3px;
+            padding-right: 5px;
+
+            margin-top: 25px;
+            margin-left: 2px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        
+        <form>
+            <img src="task6css.img" alt="err img" id="img">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="login-button">Login</button>
+
+            
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember"> 
+                <label for="remember">Remember Me</label>
+            </div>
+            <div id="boxcancel">
+            
+            <button type="button" class="cancel-button">Cancel </button>
+            <p>Forget <a href="#"> Password</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
